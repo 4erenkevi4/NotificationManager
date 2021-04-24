@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notice Manager</string>
+    <string name="add_interval_notification_hour">Add test interval notification (second)…</string>
+    <string name="check">Add notification for check state your device</string>
+    <string name="time">Repeat notification time info (sec)</string>
+    <string name="memory">Available memory info (MB)</string>
+    <string name="add_notify">Add notify</string>
+</resources>
