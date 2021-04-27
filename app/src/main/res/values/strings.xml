@@ -5,4 +5,5 @@
     <string name="time">Repeat notification time info (sec)</string>
     <string name="memory">Available memory info (MB)</string>
     <string name="add_notify">Add notify</string>
+    <string name="add_geo">Add Geo</string>
 </resources>

@@ -1,8 +1,8 @@
 package com.example.noticemanager
 
-const val description = "Information of state your devices:"
-const val notification = "Next notification will be default time (1 hour) "
-const val channelId = "notificationexample"
-const val defaultTimeInfo = "Default time(hours)"
-const val defaultduration:Long = 18000
-const val bytes: Int = 1048576
+const val DESCRIPTION = "Information of state your devices:"
+const val NOTIFICATION = "Next notification will be default time (1 hour) "
+const val CHANNELID = "notificationexample"
+const val DEFAULTTIMEINFO = "Default time(hours)"
+const val DEFAULTDURATION:Long = 18000
+const val BYTES: Int = 1048576

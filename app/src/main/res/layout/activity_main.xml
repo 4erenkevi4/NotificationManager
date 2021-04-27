@@ -25,10 +25,25 @@
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <TextView
+        android:id="@+id/geo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#94C62828"
+        android:text="@string/add_geo"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="16dp"
         android:background="#68000000"
         android:fontFamily="@font/aldrich"
         android:gravity="center"
@@ -37,7 +52,7 @@
         android:textColor="#7C0C0C"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
