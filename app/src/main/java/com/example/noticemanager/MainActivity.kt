@@ -1,6 +1,7 @@
 package com.example.noticemanager
 
 import android.Manifest.permission.*
+import android.annotation.SuppressLint
 import android.app.AlarmManager
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -65,6 +66,7 @@ class MainActivity : AppCompatActivity() {
                 addButton.startAnimation(animForButton)
                 val text = editText.text.toString()
                 val duration: Long = text.toLong()
+                timeInfoTextView.text = CUSTOMTIMEINFO
                 timeTextView.text = duration.toString()
                 Toast.makeText(this, "Next notification will be in $duration second", 300.toInt())
                     .show()
@@ -80,12 +82,13 @@ class MainActivity : AppCompatActivity() {
         }
         geoButton.setOnClickListener {
             if (editText.text.toString() == "") {
-                timeTextView.text = "1"
-                timeInfoTextView.text = DEFAULTTIMEINFO
-                checkPermissions(DEFAULTDURATION)
+                timeTextView.text = "30"
+                timeInfoTextView.text = DEFAULTTIMEINFOGEO
+                checkPermissions(DEFAULTDURATIONGEO)
             } else {
                 val text = editText.text.toString()
                 val duration: Long = text.toLong()
+                timeInfoTextView.text = CUSTOMTIMEINFO
                 timeTextView.text = duration.toString()
                 Thread.sleep(duration)
                 checkPermissions(duration)
